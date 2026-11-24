@@ -9,18 +9,18 @@ test-set prediction export.
 
 ## Project results
 
-  Item                                  Result
-  ------------------------------- ------------
-  Labelled training images               4,000
-  Test images                           46,000
-  Number of classes                         10
-  Training/validation split          80% / 20%
-  Training images used in split          3,200
-  Validation images                        800
-  Best validation accuracy          **67.63%**
-  Test predictions generated            46,000
+| Item | Result |
+|---|---:|
+| Labelled training images | 4,000 |
+| Test images | 46,000 |
+| Number of classes | 10 |
+| Training/validation split | 80% / 20% |
+| Training images used in split | 3,200 |
+| Validation images | 800 |
+| **Best validation accuracy** | **67.63%** |
+| Test predictions generated | 46,000 |
 
-**Important:** 67.63% is the accuracy measured on the held-out
+**Note** 67.63% is the accuracy measured on the held-out
 validation set. The test CSV does not contain labels, so test accuracy
 could not be calculated.
 
@@ -137,13 +137,12 @@ epochs per trial to limit computational cost.
 
 The selected configuration was:
 
-  Hyperparameter     Selected value
-  ---------------- ----------------
-  Learning rate          0.00035747
-  Weight decay           0.00226482
-  Dropout                    0.3330
-  Batch size                     64
-
+| Hyperparameter | Selected value |
+|---|---:|
+| Learning rate | 0.00035747 |
+| Weight decay | 0.00226482 |
+| Dropout | 0.3330 |
+| Batch size | 64 |
 The best short-search trial reached 48.375% validation accuracy during
 the five-epoch search. The selected configuration was subsequently
 trained for a longer run.
@@ -156,31 +155,20 @@ accuracy was **67.63%** on the 800-image held-out validation set.
 A classification report was generated to examine precision, recall, and
 F1-score for each category.
 
-  Class                    Precision     Recall   F1-score
-  ---------------------- ----------- ---------- ----------
-  Airplane                      0.75       0.71       0.73
-
-  Automobile                    0.82       0.81       0.82
-
-  Bird                          0.53       0.54       0.53
-
-  Cat                           0.54       0.47       0.50
-
-  Deer                          0.60       0.61       0.60
-
-  Dog                           0.59       0.69       0.64
-
-  Frog                          0.75       0.68       0.71
-
-  Horse                         0.67       0.70       0.69
-
-  Ship                          0.75       0.76       0.76
-
-  Truck                         0.77       0.79       0.78
-
-  **Macro average**         **0.68**   **0.68**   **0.68**
-  
-  **Weighted average**      **0.68**   **0.68**   **0.68**
+| Class | Precision | Recall | F1-score |
+|---|---:|---:|---:|
+| Airplane | 0.75 | 0.71 | 0.73 |
+| Automobile | 0.82 | 0.81 | 0.82 |
+| Bird | 0.53 | 0.54 | 0.53 |
+| Cat | 0.54 | 0.47 | 0.50 |
+| Deer | 0.60 | 0.61 | 0.60 |
+| Dog | 0.59 | 0.69 | 0.64 |
+| Frog | 0.75 | 0.68 | 0.71 |
+| Horse | 0.67 | 0.70 | 0.69 |
+| Ship | 0.75 | 0.76 | 0.76 |
+| Truck | 0.77 | 0.79 | 0.78 |
+| **Macro average** | **0.68** | **0.68** | **0.68** |
+| **Weighted average** | **0.68** | **0.68** | **0.68** |
 
 ### 6. Test-set prediction
 
