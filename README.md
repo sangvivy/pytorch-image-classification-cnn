@@ -159,16 +159,27 @@ F1-score for each category.
   Class                    Precision     Recall   F1-score
   ---------------------- ----------- ---------- ----------
   Airplane                      0.75       0.71       0.73
+
   Automobile                    0.82       0.81       0.82
+
   Bird                          0.53       0.54       0.53
+
   Cat                           0.54       0.47       0.50
+
   Deer                          0.60       0.61       0.60
+
   Dog                           0.59       0.69       0.64
+
   Frog                          0.75       0.68       0.71
+
   Horse                         0.67       0.70       0.69
+
   Ship                          0.75       0.76       0.76
+
   Truck                         0.77       0.79       0.78
+
   **Macro average**         **0.68**   **0.68**   **0.68**
+  
   **Weighted average**      **0.68**   **0.68**   **0.68**
 
 ### 6. Test-set prediction
@@ -276,4 +287,4 @@ reproducing the training will execute the model-training cells again.
 
 ## License
 
-See the repository's `LICENSE` file.
+MIT
