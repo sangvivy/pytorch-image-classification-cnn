@@ -1,9 +1,39 @@
-﻿.venv/
+
+# Python environments
+.venv/
 venv/
+env/
+ENV/
+
+# Python cache files
 __pycache__/
 *.py[cod]
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Dataset files and folders
 dataset/
+*.zip
+
+# Model outputs
 Submission.csv
 
-*.zip
+# Environment variables
+.env
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Testing and cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
